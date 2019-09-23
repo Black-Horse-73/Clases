@@ -12,9 +12,13 @@ class Car {
       this.color = newColor;
    };
 
-   let car1 = new Car('Audi').changeColor('red').printInfo();
-   let car2 = new Car('BMW').changeColor('ellow').printInfo();
-   let car3 = new Car('Ford').changeColor('black').printInfo();
+   let car1 = new Car('Audi', 'A8', 'black').changeColor('red').printInfo();
+   let car2 = new Car('BMW', 'X6', 'black').changeColor('yellow').printInfo();
+   let car3 = new Car('Ford', 'Mustang', 'white').changeColor('black').printInfo();
+
+   console.log(car1);
+   console.log(car2);
+   console.log(car3);
 
 
 
