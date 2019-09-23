@@ -5,7 +5,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Car = function () {
-   function Car() {
+   function Car(brand, model, color) {
       _classCallCheck(this, Car);
 
       this.brand = brand;
@@ -19,17 +19,26 @@ var Car = function () {
       value: function printInfo() {
          console.log(car.brand, car.model, car.color);
       }
+   }, {
+      key: 'changeColor',
+      value: function changeColor(newColor) {
+         this.color = newColor;
+      }
    }]);
 
    return Car;
 }();
 
-var car1 = new Car('Audi').printInfo();
-var car2 = new Car('BMW').printInfo();
-var car3 = new Car('Ford').printInfo();
+var car1 = new Car('Audi', 'A8', 'black').changeColor('red').printInfo();
+var car2 = new Car('BMW', 'X6', 'black').changeColor('yellow').printInfo();
+var car3 = new Car('Ford', 'Mustang', 'white').changeColor('black').printInfo();
+
+console.log(car1);
+console.log(car2);
+console.log(car3);
 
 // let color = new Car('gray');
 
 // printInfo();
 
-console.log(car.brand, car.model, car.color);
+// console.log(car.brand, car.model, car.color);
