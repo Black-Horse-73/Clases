@@ -8,7 +8,7 @@ class Car {
    printInfo() {
       console.log(car.brand, car.model, car.color)
    }
-   set changeColor(newColor) {
+   changeColor(newColor) {
       this.color = newColor;
    };
 
