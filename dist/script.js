@@ -17,7 +17,7 @@ var Car = function () {
    _createClass(Car, [{
       key: 'printInfo',
       value: function printInfo() {
-         console.log(car.brand, car.model, car.color);
+         console.log(this.brand, this.model, this.color);
       }
    }, {
       key: 'changeColor',
@@ -29,13 +29,17 @@ var Car = function () {
    return Car;
 }();
 
-var car1 = new Car('Audi', 'A8', 'black').changeColor('red').printInfo();
-var car2 = new Car('BMW', 'X6', 'black').changeColor('yellow').printInfo();
-var car3 = new Car('Ford', 'Mustang', 'white').changeColor('black').printInfo();
+var car1 = new Car('Audi', 'A8', 'black');
+var car2 = new Car('BMW', 'X6', 'pinck');
+var car3 = new Car('Ford', 'Mustang', 'white');
 
-console.log(car1);
-console.log(car2);
-console.log(car3);
+car1.changeColor('red');
+car2.changeColor('yellow');
+car3.changeColor('black');
+
+console.log(car1.printInfo());
+console.log(car2.printInfo());
+console.log(car3.printInfo());
 
 // let color = new Car('gray');
 

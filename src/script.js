@@ -6,20 +6,24 @@ class Car {
       // console.log('objCar');
    }
    printInfo() {
-      console.log(car.brand, car.model, car.color)
+      console.log(this.brand, this.model, this.color)
    }
    changeColor(newColor) {
       this.color = newColor;
    }
 }
 
-let car1 = new Car('Audi', 'A8', 'black').changeColor('red').printInfo();
-let car2 = new Car('BMW', 'X6', 'black').changeColor('yellow').printInfo();
-let car3 = new Car('Ford', 'Mustang', 'white').changeColor('black').printInfo();
+let car1 = new Car('Audi', 'A8', 'black');
+let car2 = new Car('BMW', 'X6', 'pinck');
+let car3 = new Car('Ford', 'Mustang', 'white');
 
-console.log(car1);
-console.log(car2);
-console.log(car3);
+car1.changeColor('red');
+car2.changeColor('yellow');
+car3.changeColor('black');
+
+console.log(car1.printInfo());
+console.log(car2.printInfo());
+console.log(car3.printInfo());
 
 
 
