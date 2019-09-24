@@ -11,6 +11,11 @@ class Car {
    changeColor(newColor) {
       this.color = newColor;
    }
+
+   // changeColor(newColor) {
+   //    this.color = newColor;
+   //    return this;
+   // }
 }
 
 let car1 = new Car('Audi', 'A8', 'black');
@@ -24,3 +29,7 @@ car3.changeColor('black');
 car1.printInfo();
 car2.printInfo();
 car3.printInfo();
+
+// car1.changeColor('red').printInfo();
+// car2.changeColor('yellow').printInfo();
+// car3.changeColor('black').printInfo();
