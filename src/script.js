@@ -21,14 +21,6 @@ car1.changeColor('red');
 car2.changeColor('yellow');
 car3.changeColor('black');
 
-console.log(car1.printInfo());
-console.log(car2.printInfo());
-console.log(car3.printInfo());
-
-
-
-// let color = new Car('gray');
-
-// printInfo();
-
-// console.log(car.brand, car.model, car.color);
+car1.printInfo();
+car2.printInfo();
+car3.printInfo();
